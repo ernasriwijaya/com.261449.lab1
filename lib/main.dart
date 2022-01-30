@@ -29,9 +29,7 @@ class HomePage extends StatefulWidget{
   const HomePage({Key? key}) : super(key: key);
  
   @override
-  _HomePageState createState() => _HomePageState();
-
-} 
+  _HomePageState createState() => _HomePageState();} 
 
 class _HomePageState extends State<HomePage> {
   var rate = 0.0;
@@ -43,8 +41,7 @@ class _HomePageState extends State<HomePage> {
      "JPY",
      "KRW",
      "HKD",
-     "USD"
-   ];
+     "USD"];
   String _value = "";
   double num = 0.0, result = 0.0;
 
@@ -167,9 +164,8 @@ Future <void> _result() async {
             break;
           case "USD":
             _value = "US\$ " + result.toStringAsFixed(2);
-            
           }
-      });
+       });
     }
   }
 }
